@@ -1,6 +1,6 @@
 <html>
 <header>
-<title>Tambah Data</title>
+<title>Tambah DataXX</title>
 </header>
 <body>
 
