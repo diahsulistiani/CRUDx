@@ -8,7 +8,7 @@
        
 
         <label>No_pasien</label><br>
-        <input type="text" name="nama"/>
+        <input type="text" name="no_pasien"/>
         <br><br>
 
         <label>Nama</label><br>

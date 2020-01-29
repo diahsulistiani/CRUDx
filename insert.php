@@ -7,12 +7,11 @@ $alamat=$_POST['alamat'];
 $jenis_kelamin=$_POST['jenis_kelamin'];
 $umur=$_POST['umur'];
 $keluhan=$_POST['keluhan'];
+$no_hp=$_POST['no_hp'];
 
-$insert=mysqli_query($connect,"INSERT INTO tblpasien SET no_pasien, nama, alamat,jenis_kelamin,umur,keluhan,no_hp) VALUES '$no_pasien','$nama','$alamat','$jenis_kelamin','$umur','$keluhan');
-
-if ($insert)
-    header('location:list.php');    
-else
-    echo 'input data gagal';
-
-    
+$insert=mysqli_query($koneksi,"INSERT INTO tblpasien (no_pasien, nama, alamat,jenis_kelamin,umur,keluhan,no_hp) VALUES ('$no_pasien','$nama','$alamat','$jenis_kelamin','$umur','$keluhan','$no_hp')");
+if ($insert){
+    header('location:list.php');}  
+else{
+    echo 'input data gagal';}
+?>
